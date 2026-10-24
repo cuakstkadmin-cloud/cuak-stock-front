@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Valores por defecto. VITE_COLOR_PRIMARY y VITE_COLOR_SECONDARY los reemplazan (utils/theme.ts) */
+@theme {
+  --color-primary: #1f6b4f;
+  --color-primary-hover: color-mix(in oklab, var(--color-primary) 85%, black);
+  --color-secondary: #1c1a17;
+  --color-ink: #1c1a17;
+  --color-muted: #57534b;
+  --color-subtle: #6b665c;
+  --color-surface: #f7f5f0;
+  --color-line: #e4dfd5;
+  --color-tile: #f0ede6;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+}
